@@ -4,7 +4,7 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://refactored-halibut-w9p476pjgqfg644-8000.app.github.dev/api/activity')
+    fetch('https://refactored-halibut-w9p476pjgqfg644-8000.app.github.dev/api/activity/') // Added trailing slash for Django REST API endpoint
       .then(response => response.json())
       .then(data => setActivities(data))
       .catch(error => console.error('Error fetching activities:', error));

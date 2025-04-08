@@ -15,6 +15,13 @@
       "name": "Launch React Frontend",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}/octofit-tracker/frontend/src"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch React App via npm",
+      "command": "npm start",
+      "cwd": "${workspaceFolder}/octofit-tracker/frontend"
     }
   ]
 }
