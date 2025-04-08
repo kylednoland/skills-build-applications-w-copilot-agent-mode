@@ -1,6 +1,13 @@
 from rest_framework import viewsets
+from django.http import JsonResponse
 from .models import User, Team, Activity, Leaderboard, Workout
 from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, LeaderboardSerializer, WorkoutSerializer
+
+def api_root(request):
+    return JsonResponse({
+        "codespace_url": "https://refactored-halibut-w9p476pjgqfg644-8000.app.github.dev",
+        "localhost_url": "http://localhost:8000"
+    })
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()

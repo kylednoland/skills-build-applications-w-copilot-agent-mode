@@ -25,8 +25,8 @@ SECRET_KEY = "django-insecure-f-ail5r#!$yx^8he+e%t5r3bx#fe(=d^4pop7vm&e67rp)ygaf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Updated ALLOWED_HOSTS to allow all hosts
-ALLOWED_HOSTS = ['*']
+# Added codespace URL and localhost to ALLOWED_HOSTS
+ALLOWED_HOSTS = ['*', 'refactored-halibut-w9p476pjgqfg644-8000.app.github.dev', 'localhost']
 
 
 # Application definition
