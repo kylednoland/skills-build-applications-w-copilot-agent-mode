@@ -8,6 +8,13 @@
       "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
       "args": ["runserver", "0.0.0.0:8000"],
       "django": true
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch React Frontend",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/octofit-tracker/frontend/src"
     }
   ]
 }
